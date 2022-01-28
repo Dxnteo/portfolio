@@ -1,0 +1,284 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container{
+   max-width: 90%;
+   margin-left: auto;
+   margin-right: auto; 
+   padding: 0 2rem;
+}
+
+.logo{
+    width: 50%;
+}
+.hero{
+    width: 100%;
+    background: #eff4fd;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+ nav ul{
+     display: flex;
+ }
+nav ul li{
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+nav ul li a:hover{
+    color: red;
+}
+
+.showcase{
+   width: 100%;
+   height: 50vh;
+}
+.showcase .showcasecontent{
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.detel h1{
+    font-size: 40px;
+    color: #212121;
+    margin-bottom: 20px;
+}
+.detel p{
+    font-size: 1.45rem;
+    font-weight: 300;
+    padding: .7rem 0;
+    letter-spacing: 5px;
+}
+.btn{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+    background: transparent;
+    font-size: 17px;
+    display: inline-block;
+    padding: 1rem;
+    border-radius: 5px;
+    border: 1px solid #000;
+}
+.btn:hover{
+transition: 1s;
+color: #fff;
+background: #000;
+}
+span{
+    font-size: 50px;
+}
+
+.skill{
+    background: #eff4fd;  
+    padding: 1rem 0;
+}
+
+.skill h1{
+    padding: 1rem 0;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+}
+.skill h3{
+font-weight: 300;
+padding: .65rem 0;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 1rem;
+    justify-items: center;
+    align-items: flex-start;
+}
+
+.bar{
+    width: 400px;
+    height: 10px;
+    border: 1px solid #000;
+    border-radius: 10px;
+}
+.color{
+    width: 80%;
+    background: #000;
+    height: 10px;
+    border-radius: 10px;
+}
+
+
+.color1{
+    width: 35%;
+    background: #000;
+    height: 10px;
+    border-radius: 10px;
+}
+.color2{
+    width:80%;
+    background: #000;
+    height: 10px;
+    border-radius: 10px;
+}
+.imgbox img{
+width: 250px;
+height: auto;
+padding: 1rem 0;
+
+}
+.imgbox img:hover{
+    transform: scale(1.1);
+    transition:  1s;
+}
+#about {
+    width: 100%;
+    padding: 1rem 0;
+    background-color: #eff4fd;
+}
+#about h1 {
+font-weight: 400;
+font-size: 1.6rem;
+text-align: center; 
+  }
+#about p {
+  font-size: 1.3rem;
+  text-align: center;
+  font-weight: 300;
+}
+.services{
+    width: 100%; 
+    padding: 1rem 0;
+    background-color: #eff4fd;
+}
+.services h1{
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.6rem;
+}
+
+.grid2{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-items: center;
+}
+
+.col{
+background-color: #fff;
+padding: 15px 40px;
+margin:  1rem;
+border-radius: 10px;
+}
+.col h2{
+font-weight: 400;
+text-align: center;
+margin-bottom: 13px;
+}
+.col p{
+  font-size: 1.2rem;
+  font-weight: 300;  
+}
+.col:hover{
+    box-shadow: 0 0 15px  0 rgba(0, 0, 0, 0.1);
+    transform: scale(1.01);
+    transition:  .5s;
+}
+
+.copyright{
+    background-color: #eff4fd;
+}
+.copyright p{
+font-weight: 300;
+padding: 1rem;
+text-align: center;
+padding: 1rem 0; 
+}
+
+
+
+
+@media (max-width:567px){
+    .container{
+        max-width: 75%;
+        margin-left: auto;
+        margin-right: auto; 
+        padding: 0 2rem;
+     }
+
+     .bar{
+        width: 150px;
+        height: 10px;
+        border: 1px solid #000;
+        border-radius: 10px;
+    }
+     
+    .detel p{
+        font-size: 1.25rem;
+    }
+    .detel h1{
+        font-size: 30px;
+    }
+    html{
+        font-size: 14px;
+    }
+
+    .grid2{
+        grid-template-columns: 1fr;
+
+    }
+    .grid{
+        grid-template-columns:1fr;
+    }
+    
+}
+@media (max-width:768px){
+
+    .bar{
+        width: 250px;
+        height: 10px;
+        border: 1px solid #000;
+        border-radius: 10px;
+    }
+    .container{
+        max-width: 85%;
+        margin-left: auto;
+        margin-right: auto; 
+        padding: 0 2rem;
+     }
+     
+    .detel p{
+        font-size: 1.35rem;
+    }
+    .detel h1{
+        font-size: 35px;
+    }
+    html{
+        font-size: 14.5px;
+    }
+    .logo{
+        width: 40%;
+    }
+    .grid2{
+        grid-template-columns: 1fr;
+
+    }
+    .grid{
+        grid-template-columns:1fr;
+    }
+    
+}
